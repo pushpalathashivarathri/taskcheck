@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  } 
+  nav {
+    padding: 20px;
+    background: rgb(41, 37, 41); 
+    color: cornsilk;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .mainmenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainmenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: cornsilk;
+    font-size: 1.5rem;
+  }
+  nav .mainmenu li {
+    padding: 5px;
+    font-size: large;
+  }
+  nav .openmenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainmenu .closemenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  .contact {
+    width: 65%;
+    display: flex;
+    padding: 32px;
+    margin: 15px;
+    align-items: center;
+  }
+  .contact img {
+    border-radius: 36%;
+    width: 230px;
+  }
+  .details {
+    font-size: 20px;
+    padding: 30px;
+    margin: 5px;
+  }
+  .contctsec {
+    display: flex;
+    align-items: center;
+  }
+  .icons {
+    width: 30%;
+    padding: 7px;
+    margin: 50px;
+    font-size: 25px;
+  }
+  .icons a {
+  padding: 10px;
+  margin: 8px;
+  }
+  .icons p {
+    padding: 25px;
+  }
+  .container1 {
+   width: 70%;
+    display: flex;
+    background-color: black;
+    width: 1100px;
+    height: 700px;
+  }
+  .header {
+    display: flex;
+    position: relative;
+    padding: 20px;
+  }
+  .container2 {
+    width: 30%;
+    border: 2px solid #686060;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 20px;
+    background-color: #a2abab;
+    height: 430px;
+    margin-top: 114px;
+  }
+  input,textarea {
+    border: 1px solid #8f8484;
+    padding: 6px 10px;
+    border-radius: 6px;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 10px;
+    resize: vertical;
+  }
+  .submain {
+    margin-bottom: 30px;
+  }
+  .submain h1 {
+    font-size: 30px;
+    padding: 5px 10px;
+  }
+  .submain p {
+    font-size: 20px;
+    padding: 5px 20px;
+  }
+  .main img {
+    width: 200px;
+    height: 200px;
+  }
+  .main a {
+    text-decoration: none;
+    color: black;
+  }
+  .main{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    padding: 40px;
+  }
+  .main h3 {
+    padding: 8px 1px;
+  }
+  .main p {
+    padding: 2px 2px;
+  }
+  .footer {
+      font-size: 18px;
+      padding: 30px;
+      background-color: rgb(41, 37, 41);
+      color: cornsilk;
+      text-align: center;
+  }
+  @media only screen and (max-width: 1140px){
+    .contact img {
+       width: 200px;
+  }
+    .icons {
+      margin: 20px;
+      font-size: 20px;
+  }
+  .details {
+    padding: 20px;
+    margin: 5px;
+}
+.container1 {
+  width: 800px;
+  height: 555px;
+}
+.container2 {
+   margin-top: 47px;
+}
+.burger {
+  display: none;
+}
+  @media only screen and (max-width: 990px){
+    .icons {
+      margin: 2px;
+    }
+    .icons a {
+      padding: 8px;
+      margin: 3px;
+      }
+  }
+  .container1 {
+    width: 800px;
+    height: 606px;
+  }
+  .container2 {
+    height: 420px;
+    margin-top: 88px;
+}
+  }
+  @media only screen and (max-width: 890px){
+.main{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.main p {
+  margin-bottom: 40px;
+}
+  }
+  @media only screen and (max-width: 720px){
+    nav .mainmenu { 
+      height: 30vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      background:rgb(90 84 90);
+      flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+       display: none;
+      }
+      nav .mainmenu .closemenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+      nav .openmenu {
+        display: block;
+      }
+    .container1 {
+      width: 470px;
+      height: 435px;
+    }
+   .container2 {
+      height: 410px;
+      padding: 10px;
+    margin: 10px;
+    margin-top: 46px;
+    }
+     input, textarea {
+      padding: 4px 7px;
+      margin-top: 7px;
+    margin-bottom: 8px;
+    }
+    .container2 {
+      height: 410px;
+      padding: 4px;
+      margin: 5px;
+  }
+  .icons a {
+    padding: 5px;
+    margin: 1px;
+}
+.icons p {
+  padding: 10px;
+}
+.burger {
+  display: block;
+}
+.contctsec {
+  height: 40%;
+}
+  }
+  @media only screen and (max-width: 600px)
+  {
+    .navbar h2{
+        margin-right: 0;
+      }
+    #menu {
+        width: 90%;
+   }
+  .contctsec {
+       height: 60%;
+    }
+  .contact {
+    padding: 5px;
+    margin: 5px;
+  }
+  .contact img {
+    width: 150px;
+}
+.details {
+  padding: 10px;
+  margin: 0px;
+}
+.icons {
+  margin: 1px;
+}
+.icons a {
+  padding: 4px;
+  margin: 2px;
+}
+.icons p {
+  padding: 12px;
+}
+.container1 {
+  width: 300px;
+  height: 310px;
+  margin-top: 75px;
+}
+.container2 {
+  padding: 6px;
+  margin: 18px;
+}
+input, textarea {
+  padding: 2px 6px;
+}
+.footer { 
+  font-size: 20px;
+}
+  }
+  @media only screen and (max-width: 480px) {
+   nav {
+    padding: 7px;
+   }
+   .contctsec {
+    height: 110%;
+  }
+    .contact {
+    display: block;
+    width: 48%;
+   }
+   .contact img {
+    width: 120px;
+}
+.icons {
+  margin: 1px;
+  margin-bottom: 100px;
+  width: 45%;
+}
+.icons a {
+  padding: 5px;
+  margin: 0;
+}
+   .icons p {
+    padding: 8px;
+}
+.container2 {
+  padding: 6px;
+  margin: 18px;
+}
+.header {
+  display: block;
+  padding: 7px;
+}
+.container1 {
+  width: 310px;
+  height: 310px;
+  margin-top: 0;
+}
+.container2 {
+  width: 55%;
+  height: 363px;
+  margin: 10px 50px
+}
+.main {
+  display: block;
+padding: 10px 60px;
+}
+}
